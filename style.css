@@ -1,5 +1,68 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E4E4E4;
+    text-align: center;
+}
+
+#vänstra-naven,
+#högra-naven {
+    display: flex;
+    align-items: center;
+}
+
+#varukorg-knapp {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+#vänstra-naven button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
 /* Stilregler för mobil */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+
+    #varukorg-knapp img {
+        width: 50px;
+        height: 50px;
+    }
+
+    #vänstra-naven button img {
+        width: 30px;
+        height: 20px;
+    }
+
+    #vänstra-naven a {
+        display: none;
+    }
+
+
+    #högra-naven a {
+        display: none;
+    }
+
+    #högra-naven a {
+        display: none;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}
+
 
 /* Stilregler för surfplattor */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {}
