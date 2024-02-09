@@ -1,0 +1,8 @@
+/* Stilregler för mobil */
+@media only screen and (max-width: 767px) {}
+
+/* Stilregler för surfplattor */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/* Stilregler för dator */
+@media only screen and (min-width: 1025px) {}
