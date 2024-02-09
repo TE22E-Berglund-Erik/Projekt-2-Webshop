@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
 header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +27,18 @@ header {
     cursor: pointer;
 }
 
+h1 {
+    font-family: "Bodoni Moda", serif;
+    font-weight: 800;
+    font-style: italic;
+    
+}
+
+
+
+
+
+
 
 
 
@@ -35,14 +49,32 @@ header {
 /* Stilregler för mobil */
 @media only screen and (max-width: 767px) {
 
+    header h1{
+        letter-spacing: 3px;
+    }
     #varukorg-knapp img {
-        width: 50px;
-        height: 50px;
+        width: 35px;
+        height: 35px;
     }
 
-    #vänstra-naven button img {
-        width: 30px;
+    #sök-knapp {
+        margin-left: 10px;
+    }
+
+    #sök-knapp img {
+        height: 16px;
+        width: 16px;
+        margin-left: 8px;
+    }
+
+    #meny-knapp {
+        width: 20px;
         height: 20px;
+    }
+    #meny-knapp img{
+        width: 20px;
+        height: 12px;
+        margin-left: 4px;
     }
 
     #vänstra-naven a {
@@ -59,7 +91,7 @@ header {
     }
 
     h1 {
-        font-size: 20px;
+        font-size: 17px;
     }
 }
 
