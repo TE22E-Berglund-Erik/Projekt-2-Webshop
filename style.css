@@ -27,14 +27,16 @@ header {
     cursor: pointer;
 }
 
-h1 {
+h1,
+#visa-mer p {
     font-family: "Bodoni Moda", serif;
     font-weight: 800;
     font-style: italic;
 
 }
 
-main {
+main,
+footer {
     background-color: #E4E4E4;
 }
 
@@ -42,90 +44,145 @@ main {
     text-align: center;
 }
 
-
-/* Stilregler för mobil */
-@media only screen and (max-width: 767px) {
-
-    /* Main, produkt container regler */
-main {
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-rows: 1;
-    border-radius: 0.13rem;
-    margin: 0.625rem;
-    place-items: center;
+#visa-mer button {
+    border: solid 0.1rem rgba(0, 0, 0, 1);
+    background-color: #CACACA;
 }
-
-.produkter {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.produkt {
-    margin: 1.25rem;
-    border: solid 0.125rem rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
-    background-color: white;
-    border-radius: 1rem;
-    overflow: hidden;
-}
-
 
 .produkt img {
     height: auto;
     width: 100%;
 }
 
-/* Header regler */
-header h1 {
+#visa-mer {
+    text-align: center;
+}
+
+#visa-mer p {
+    margin: 0;
     letter-spacing: 0.1875rem;
 }
 
-#varukorg-knapp img {
-    width: 2.1875rem;
-    height: 2.1875rem;
+.info {
+    list-style-type: none;
+    font-family: "Bodoni Moda", serif;
+
 }
 
-#sök-knapp {
-    margin-left: 0.625rem;
+.sektion a {
+    text-decoration: none;
+    color: black;
 }
 
-#sök-knapp img {
-    height: 1rem;
-    width: 1rem;
-    margin-left: 0.5rem;
-}
 
-#meny-knapp {
-    width: 1.25rem;
-    height: 1.25rem;
-}
+/* Stilregler för mobil */
+@media only screen and (max-width: 767px) {
 
-#meny-knapp img {
-    width: 1.25rem;
-    height: 0.75rem;
-    margin-left: 0.25rem;
-}
+    /* Main, produkt container regler */
+    main {
+        display: grid;
+        grid-template-rows: 1;
+        grid-template-rows: 1;
+        border-radius: 0.13rem;
+        margin: 0.625rem;
+        place-items: center;
+    }
 
-#vänstra-naven a {
-    display: none;
-}
+    .produkter {
+        grid-column: span 1;
+        grid-row: span 1;
+    }
 
-#högra-naven a {
-    display: none;
-}
-
-#högra-naven a {
-    display: none;
-}
-
-h1 {
-    font-size: 1.0625rem;
-}
-
-/* footer regler */
+    .produkt {
+        margin: 1.25rem;
+        border: solid 0.125rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
 
 
+    #visa-mer button {
+        border-radius: 2rem;
+        width: 30vw;
+        height: 2rem;
+        margin-bottom: 2rem;
+    }
+
+
+    #visa-mer button:active {
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    /* Header regler */
+    header h1 {
+        letter-spacing: 0.1875rem;
+    }
+
+    #varukorg-knapp img {
+        width: 2.1875rem;
+        height: 2.1875rem;
+    }
+
+    #sök-knapp {
+        margin-left: 0.625rem;
+    }
+
+    #sök-knapp img {
+        height: 1rem;
+        width: 1rem;
+        margin-left: 0.5rem;
+    }
+
+    #meny-knapp {
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    #meny-knapp img {
+        width: 1.25rem;
+        height: 0.75rem;
+        margin-left: 0.25rem;
+    }
+
+    #vänstra-naven a {
+        display: none;
+    }
+
+    #högra-naven a {
+        display: none;
+    }
+
+    #högra-naven a {
+        display: none;
+    }
+
+    header h1 {
+        font-size: 1.0625rem;
+    }
+
+    /* footer regler */
+
+    footer h1 {
+        padding-top: 5%;
+        text-align: center;
+    }
+
+    .sektion {
+        font-size: 1.125rem;
+        margin-bottom: 0.625rem;
+        font-family: "Bodoni Moda", serif;
+        font-weight: 800;
+        font-style: italic;
+    }
+
+    .line {
+        width: 90%;
+        height: 0.1rem;
+        background-color: rgba(0, 0, 0, 1);
+        margin: 5% auto;
+    }
 }
 
 
