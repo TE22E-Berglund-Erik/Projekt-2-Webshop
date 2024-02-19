@@ -12,7 +12,6 @@ header {
 #högra-naven {
     display: flex;
     align-items: center;
-    width: 35%;
 }
 
 #varukorg-knapp {
@@ -33,7 +32,6 @@ h1,
     font-family: "Bodoni Moda", serif;
     font-weight: 800;
     font-style: italic;
-
 }
 
 main,
@@ -75,8 +73,21 @@ header a {
     color: black;
 }
 
+#högra-naven {
+    justify-self: flex-end;
+}
+
+#vänstra-naven {
+    justify-self: flex-start;
+}
+
 #visa-mer button:active {
     background-color: rgba(0, 0, 0, 0.5);
+}
+nav h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 /* Stilregler för mobil */
@@ -256,9 +267,12 @@ header a {
         font-size: 1rem;
     }
 
+
+
     /* Footer regler */
     footer {
         display: flex;
+
         align-items: center;
     }
 
@@ -291,4 +305,113 @@ header a {
 
 /* Stilregler för dator */
 @media only screen and (min-width: 1025px) {
+
+    /* Main, produkt container, produkt regler */
+    main {
+        margin: 5%;
+        border-radius: 2rem;
+        padding: 2%;
+        gap: 20px;
+    }
+
+    #produkter {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .produkt {
+        overflow: hidden;
+        border: solid 0.125rem rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+        background-color: white;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+
+    main .produkt:first-child {
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    main .produkt:nth-child(2) {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    main .produkt:nth-child(3) {
+        grid-column: 3;
+        grid-row: 1;
+    }
+
+    main .produkt:nth-child(4) {
+        grid-column: 1;
+        grid-row: 2;
+    }
+
+    main .produkt:nth-child(5) {
+        grid-column: 2;
+        grid-row: 2;
+    }
+
+    main .produkt:nth-child(6) {
+        grid-column: 3;
+        grid-row: 2;
+    }
+
+    #visa-mer button {
+        border-radius: 2rem;
+        width: 15vw;
+        height: 2rem;
+        margin: 2.5rem 0;
+    }
+
+    /* Header regler */
+    header {
+        justify-content: space-between;
+    }
+
+    header a {
+        letter-spacing: 0.01rem;
+        margin: 0 0.4rem;
+        font-size: 1rem;
+    }
+
+    #högra-naven {
+        justify-self: flex-end;
+    }
+
+
+    /* Footer regler */
+    footer {
+        display: flex;
+        align-items: center;
+    }
+
+    footer #logga {
+        order: 1;
+        margin: 0 10%;
+        font-size: 3rem;
+    }
+
+    .sektion {
+        order: 0;
+        margin: 0 1%;
+    }
+
+    .sektion p {
+        font-size: 1rem;
+        margin: 0 1%;
+    }
+
+    .sektion li {
+        margin: 10% 0;
+
+    }
+
+    .sektion p {
+        margin: 0 10%;
+        font-weight: 900;
+    }
 }
