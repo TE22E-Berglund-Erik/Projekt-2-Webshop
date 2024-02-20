@@ -272,7 +272,6 @@ nav h1{
     /* Footer regler */
     footer {
         display: flex;
-
         align-items: center;
     }
 
@@ -398,20 +397,17 @@ nav h1{
     .sektion {
         order: 0;
         margin: 0 1%;
+        text-align: center;
+       
     }
 
     .sektion p {
-        font-size: 1rem;
         margin: 0 1%;
+        padding-bottom: 10%;
+        font-weight: 900;
     }
 
     .sektion li {
         margin: 10% 0;
-
-    }
-
-    .sektion p {
-        margin: 0 10%;
-        font-weight: 900;
     }
 }
