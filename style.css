@@ -155,6 +155,9 @@ header a,
     text-decoration: none;
     color: black;
 }
+.produkt-info p{
+    font-size: 1.2rem;
+}
 
 #högra-naven {
     justify-self: flex-end;
@@ -192,6 +195,7 @@ header a,
         border-radius: 1rem;
         overflow: hidden;
     }
+    
 
 
     #visa-mer button {
