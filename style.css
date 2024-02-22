@@ -1,5 +1,75 @@
 @import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
 
+#varukorg-ruta {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    width: 12rem;
+    background-color: #f9f9f98b;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+    display: none;
+    font-family: "Bodoni Moda", serif;
+    z-index: 1000;
+    overflow-y: auto;
+}
+
+#varukorg-titel {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+#varukorg-innehåll {
+    max-height: 20rem;
+}
+
+.produkt-namn,
+.produkt-pris,
+#totalpris {
+    font-weight: bold;
+}
+
+.ta-bort-knapp {
+    background-color: transparent;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    font-size: 0.875rem;
+}
+
+#stäng-varukorg {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    background-color: #CACACA;
+    color: black;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+}
+
+#rensavarukorg,
+#checka-ut {
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #CACACA;
+    color: black;
+    border: solid 0.01rem rgba(0, 0, 0, 1);
+    border-radius: 0.25rem;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+
+#checka-ut button:active,
+#rensa-varukorg button:active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -34,6 +104,11 @@ h1,
     font-style: italic;
 }
 
+body {
+    background: rgb(202, 202, 202);
+    background: linear-gradient(0deg, rgba(202, 202, 202, 1) 50%, rgba(255, 255, 255, 1) 100%);
+}
+
 main,
 footer {
     background-color: #E4E4E4;
@@ -46,6 +121,10 @@ footer {
 #visa-mer button {
     border: solid 0.1rem rgba(0, 0, 0, 1);
     background-color: #CACACA;
+}
+
+#visa-mer button:active {
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .produkt img {
@@ -63,10 +142,11 @@ footer {
 }
 
 .info a,
-.produkt-info a,
+.produkt-info p,
 .sektion li,
 .sektion p,
-header a {
+header a,
+#varukorg-ruta {
     list-style-type: none;
     font-family: "Bodoni Moda", serif;
     text-decoration: none;
@@ -81,14 +161,7 @@ header a {
     justify-self: flex-start;
 }
 
-#visa-mer button:active {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-nav h1{
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-}
+
 
 /* Stilregler för mobil */
 @media only screen and (max-width: 767px) {
@@ -164,9 +237,6 @@ nav h1{
         display: none;
     }
 
-    #högra-naven a {
-        display: none;
-    }
 
     header h1 {
         font-size: 1.0625rem;
@@ -398,7 +468,7 @@ nav h1{
         order: 0;
         margin: 0 1%;
         text-align: center;
-       
+
     }
 
     .sektion p {
