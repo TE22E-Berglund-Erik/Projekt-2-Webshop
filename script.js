@@ -7,6 +7,11 @@ const produktKnappar = document.querySelectorAll(".produkt-knapp");
 const rensaVarukorgKnapp = document.getElementById("rensavarukorg");
 const stängVarukorgKnapp = document.getElementById("stäng-varukorg");
 
+const menyKnapp = document.getElementById('meny-knapp');
+const menyText = document.getElementById('meny-text');
+const dropdown = document.getElementById('hela-menyn');
+const stängKnapp = document.getElementById('meny-stäng-knapp')
+
 // Variabler
 let totalpris = 0;
 let antalProdukter = {};
@@ -98,3 +103,15 @@ document.getElementById("om").addEventListener("click", () => {
 });
 
 
+// Visa/Dölj Dropdown meny
+
+menyKnapp.addEventListener("click", () => {
+  dropdown.style.display = 'block';
+});
+menyText.addEventListener("click", () => {
+  dropdown.style.display = 'block';
+});
+
+stängKnapp.addEventListener("click", () => {
+  dropdown.style.display = 'none';
+});
